@@ -1,8 +1,8 @@
 # Splunk-Project
 
-### Basic Splunk Homework
+# Basic Splunk Homework
 
-### Scenario
+## Scenario
 You have just been hired as an SOC Analyst by Vandalay Industries, an importing and exporting company.
 
 
@@ -11,13 +11,13 @@ Vandalay Industries uses Splunk for their security monitoring and have been expe
 
 You are tasked with developing searches, custom reports and alerts to monitor Vandalay's security environment in order to protect them from future attacks.
 
-### System Requirements
+## System Requirements
 You will be using the Splunk app located in the Ubuntu VM.
 
-### My Objective
+## My Objective
 Utilize Splunk to design a powerful monitoring solution to protect Vandaly from security attacks.
 
-### Step 1: The Need for Speed
+## Step 1: The Need for Speed
 Background: As the worldwide leader of importing and exporting, Vandalay Industries has been the target of many adversaries attempting to disrupt their online business. Recently, Vandaly has been experiencing DDOS attacks against their web servers.
 Not only were web servers taken offline by a DDOS attack, but upload and download speed were also significantly impacted after the outage. Your networking team provided results of a network speed run around the time of the latest DDOS attack.
 
@@ -44,14 +44,14 @@ Create a report using the Splunk's table command to display the following fields
 <a href="https://github.com/jcassiday/Splunk-Project/"><img src="https://github.com/jcassiday/Splunk-Project/blob/main/Images/splunk3.jpg" align="center" height="60%" width="60%" ></a>
 
 
-Based on the report created, what is the approximate date and time of the attack?
-**2020-02-23 14:30:00pm**
+**Based on the report created, what is the approximate date and time of the attack?**<br/>
+2020-02-23 14:30:00pm
 
-How long did it take your systems to recover?
-**Systems recovered at 2020-02-23 22:30:00pm. 8 hours total**
+**How long did it take your systems to recover?**<br/>
+Systems recovered at 2020-02-23 22:30:00pm. 8 hours total
 
 
-### Step 2: Are We Vulnerable?
+## Step 2: Are We Vulnerable?
 Background:  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
 
 **Task:** Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
@@ -71,26 +71,28 @@ Build an alert that monitors every day to see if this server has any critical vu
 
 <a href="https://github.com/jcassiday/Splunk-Project/"><img src="https://github.com/jcassiday/Splunk-Project/blob/main/Images/splunk7.jpg" align="center" height="70%" width="70%" ></a>
 
-### Step 3: Drawing the (base)line
+## Step 3: Drawing the (base)line
 Background:  A Vandaly server is also experiencing brute force attacks into their administrator account. Management would like you to set up monitoring to notify the SOC team if a brute force attack occurs again.
 
 **Task:** Analyze administrator logs that document a brute force attack. Then, create a baseline of the ordinary amount of administrator bad logins and determine a threshold to indicate if a brute force attack is occurring.
 
+<a href="https://github.com/jcassiday/Splunk-Project/"><img src="https://github.com/jcassiday/Splunk-Project/blob/main/Images/splunk8.jpg" align="center" height="90%" width="90%" ></a>
 
-When did the brute force attack occur?
-<a href="https://github.com/jcassiday/Splunk-Project/"><img src="https://github.com/jcassiday/Splunk-Project/blob/main/Images/splunk8.jpg" align="center" height="70%" width="70%" ></a>
+**When did the brute force attack occur?**<br/>
+The attack started at 8AM on Feb 21 2020
 
-**The attack started at 8AM on Feb 21 2020**
-
-Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
-
-**Since the average failed logins attempts is around 6 to 23. I put the alert trigger at 30 or higher within an hour span.**
+**Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.**<br/>
+Since the average failed logins attempts is around 6 to 23. I put the alert trigger at 30 or higher within an hour span.
 
 Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered.
 <a href="https://github.com/jcassiday/Splunk-Project/"><img src="https://github.com/jcassiday/Splunk-Project/blob/main/Images/splunk9.jpg" align="center" height="70%" width="70%" ></a>
 
+<br/>
+<br/>
+<br/>
+<br/>
 
-**Master of the SOC**
+# Master of the SOC
 
 
 Your an SOC analyst at a small company called Virtual Space Industries (VSI), which designs virtual reality programs for businesses.
@@ -221,7 +223,7 @@ A statistical chart that illustrates the count of different user agents.
 On your dashboard, add the ability to change the time range for all your visualizations:
 
 
-**Defend Your SOC**
+# Defend Your SOC
 
 
 VSI recently experienced several cyberattacks, likely from their adversary JobeCorp.
